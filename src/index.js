@@ -1,4 +1,3 @@
-
 export default class TogetherButton {
   constructor() {
     this.init()
@@ -13,13 +12,27 @@ export default class TogetherButton {
       /* Configuration */
 
       .together * {
+        all: initial;
         padding: 0;
         margin: 0;
         border: 0;
         width: 100%;
         font-family: Arial;
       }
-      
+
+      .together a {
+        color: blank;
+        text-decoration: underline;
+      }
+
+      .btn-action span {
+        cursor: pointer;
+      }
+
+      .together a {
+        cursor: pointer;
+      }
+
       
       .together-modal-structure {
         background-color: #FFFFFF;
@@ -59,7 +72,7 @@ export default class TogetherButton {
         height: 100px;
         display: flex;
       }
-      
+
       .together-close {
       }
       
@@ -115,8 +128,10 @@ export default class TogetherButton {
         position: fixed;
       }
       .together-container-logo {
-        padding-top: 25px;
+        padding-top: 15px;
         display: block;
+        max-width: 120px;
+        margin: auto;
       }
       
       /* Modal Content */
@@ -131,16 +146,11 @@ export default class TogetherButton {
       
       .together-modal-content span {
         font-weight: bold;
-        margin-top: 30px;
         font-size: 16px;
       }
       
       .together-modal-content p {
         font-size: 14px;
-      }
-      
-      .together-emergency-item {
-        padding-top: 20px;
       }
       
       
@@ -159,13 +169,16 @@ export default class TogetherButton {
       /* Container Principal Text */
       
       .together-container-txt {
-        text-align: center;
         color: black;
         height: 50px;
       }
       .together-container-txt h1 {
         font-size: 18px;
       }
+      .together-container-txt span {
+        text-align: center;
+      }
+
       
       
       
@@ -173,7 +186,11 @@ export default class TogetherButton {
       
       .together-container-btns {
         max-width: 500px;
-        height: 100px;
+        height: 90px;
+      }
+
+      .together-container-btns span{
+        text-align: center;
       }
       
       .btn-action {
@@ -185,22 +202,31 @@ export default class TogetherButton {
         border-radius: 20px;
       }
       
+      .btn-action span {
+        color: #FFFFFF;
+      }
+
       .text-btn-action {
-        text-align: center;
-      
         font-size: 18px;
-        margin: 0;
-        margin-top: 13px;
+        padding-top: 13px;
       }
       
-      .btn-action-left {
+      .together-btn-help {
         width: 45%;
         float: left;
         margin: auto;
       }
+
+
+      .btn-action-left {
+        width: 45%;
+        float: left;
+        margin: auto;
+        margin-top: 80px;
+      }
       
-      .together-btn:hover,
-      .together-btn:focus {
+      .text-btn-action:hover,
+      .text-btn-action:focus {
         text-decoration: none;
         cursor: pointer;
       }
@@ -222,13 +248,16 @@ export default class TogetherButton {
       
       /* Container last texts */
       .together-container-last-txt {
-        text-align: center;
         padding-top: 20px;
       }
       
       .together-container-last-txt h3 {
         font-size: 14px;
         padding: 5px;
+      }
+      
+      .together-container-last-txt div {
+        text-align: center;
       }
       
       /* Container call help instructions */
@@ -280,15 +309,15 @@ export default class TogetherButton {
       </style>
   
       <!-- Together HTML -->
-      <div id="my-modal" class="together-modal">
+      <div class="together-modal">
       <div class="together together-modal-structure">
   
         <div class="together-modal-header">
           <div class="together-container-back-btn">
-            <img class="together-close" src="assets/close-btn.svg" />
+            <img class="together-close" src="https://raw.githubusercontent.com/together-project/together-button-web/master/assets/web-close-btn.svg" />
           </div>
           <div class="together-container-logo">
-            <img width="128" height="50" src="assets/logo.svg" />
+            <img width="20" height="50" src="https://raw.githubusercontent.com/together-project/together-button-web/master/assets/web-logo.svg" />
           </div>
         </div>
   
@@ -297,30 +326,30 @@ export default class TogetherButton {
           <div class="together-modal-content-home">
   
             <div class="together-container-center together-container-txt">
-              <h1 class="">As vezes só precisamos de </br> alguém para conversar
-              </h1>
+              <span>As vezes só precisamos de </br> alguém para conversar
+              </span>
             </div>
   
             <div class="together-container-center together-container-img">
-              <img class="together-img-responsive" src="assets/together.svg" />
+              <img class="together-img-responsive" src="https://raw.githubusercontent.com/together-project/together-button-web/master/assets/web-together.svg" />
             </div>
   
             <div class="together-container-center together-container-last-txt">
               <div>
-                <p>Não fique só</p>
-                <p>Não corra perigo</p>
-                <p>Busque ajuda</p>
+                <p>Não fique só</p></br>
+                <p>Não corra perigo</p></br>
+                <p>Busque ajuda</p></br>
               </div>
             </div>
   
             <div class="together-container-center together-container-btns">
-              <div class="btn-action together-btn btn-action-left together-btn-help">
-                <p class="text-btn-action"><b>Preciso de ajuda</b></p>
+              <div class="btn-action together-btn together-btn-help">
+                <p class="text-btn-action together-container-center"><span>Preciso de ajuda</span></p>
               </div>
   
               <div class="btn-action together-btn btn-action-mobile">
                 <a href="tel:180">
-                  <p class="text-btn-action"><b>Chamar 180</b></p>
+                  <p class="text-btn-action together-container-center"><span>Chamar 180</span></p>
                 </a>
               </div>
             </div>
@@ -330,20 +359,20 @@ export default class TogetherButton {
           <div class="together-container-center together-modal-content-call-help">
             <div class="together-modal-content-call-help-instructions">
               <div class="together-emergency-item">
-                <span>Atenção!</span>
-                <p>Se você estiver em situação de emergencia ligar para <a href="tel:190">190</a></p>
+                <span>Atenção!</span></br>
+                <p>Se você estiver em situação de emergencia ligar para <a href="tel:190">190</a></p></br></br>
               </div>
               <div class="together-emergency-item">
-                <span>Por ligação</span>
+                <span>Por ligação</span></br>
                 <p>Se estiver em segurança para falar ao telefone, você pode denunciar ou receber orientações pelo
                   numero
-                  <a href="tel:180">180</a></p>
+                  <a href="tel:180">180</a></p></br></br>
               </div>
               <div class="together-emergency-item">
-                <span>Fale online</span>
+                <span>Fale online</span></br>
                 <p>Se você quer conversar online acesse o chat do Ministerio dos Direitos Humanos <a
-                    href="https://mdh-chat.metasix.solutions/livechat?mode=popout" target="_blank">clicando aqui</a></p>
-                <p>É uma forma silenciosa e segura de denunciar.</ṕ>
+                    href="https://mdh-chat.metasix.solutions/livechat?mode=popout" target="_blank"> clicando aqui</a></p></br>
+                <p>É uma forma silenciosa e segura de denunciar.</p></br>
               </div>
             </div>
   
@@ -351,7 +380,7 @@ export default class TogetherButton {
   
             <div class="together-container-center together-container-btns">
               <div class="btn-action together-btn btn-action-left">
-                <p class="text-btn-action together-back"><b>Voltar</b></p>
+                <p class="together-container-center text-btn-action together-back"><span>Voltar</span></p>
               </div>
             </div>
   
@@ -375,8 +404,8 @@ export default class TogetherButton {
 
 
     // Get DOM Elements
-    const modal = document.querySelector('#my-modal');
-    const modalBtn = document.querySelector('#modal-btn');
+    const modal = document.querySelector('.together-modal');
+    const modalBtn = document.querySelector('.together-btn');
     const closeBtn = document.querySelector('.together-close');
     const emergencyBtn = document.querySelector('.together-btn-help');
     const contentHome = document.querySelector('.together-modal-content-home');
@@ -422,9 +451,8 @@ export default class TogetherButton {
 
   }
 
-  init = () => {
-    document.querySelector('.together-btn').addEventListener('click', () => this.showModal());
+  init() {
+    document.addEventListener("DOMContentLoaded", () => document.querySelector('.together-btn').addEventListener('click', () => this.showModal()))
   }
-
 
 }

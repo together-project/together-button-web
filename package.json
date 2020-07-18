@@ -1,6 +1,6 @@
 {
-  "name": "together-lib",
-  "version": "0.1.0",
+  "name": "together-button-web",
+  "version": "0.1.6",
   "description": "Button for women in situation of violence to ask help.",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "botão",
     "denunciar"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/preset-env": "^7.10.3",

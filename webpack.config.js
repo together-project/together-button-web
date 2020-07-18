@@ -4,7 +4,7 @@ module.exports = {
   mode: 'production',
   entry: './index.js',
   output: {
-    path: path.join(__dirname, 'lib'),
+    path: path.join(__dirname, 'dist'),
     filename: 'together-button.min.js',
     libraryTarget: 'umd',
     library: 'TogetherButton'
@@ -16,20 +16,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
       },
-      {
-        test: /\.(?:png|jpg|gif|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'assets/[hash].[ext]',
-            }
-          },
-        ]
-      },
     ],
   },
   devServer: {
-    contentBase: [path.join(__dirname, 'example'), path.join(__dirname, 'lib')],
+    contentBase: [path.join(__dirname, 'dist')],
   },
 }
