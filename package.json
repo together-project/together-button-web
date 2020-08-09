@@ -1,6 +1,6 @@
 {
   "name": "together-button-web",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Button for women in situation of violence to ask help.",
   "main": "index.js",
   "scripts": {

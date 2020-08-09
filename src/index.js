@@ -59,7 +59,7 @@ export default class TogetherButton {
       .together-modal {
         display: none;
         position: fixed;
-        z-index: 1;
+        z-index: 999999;
         left: 0;
         top: 0;
         height: 100%;
