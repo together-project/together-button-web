@@ -110,7 +110,7 @@ Adicione no diretório ./dist/ do seu projeto.
 Ou utilize CDN
 ```html
   <!-- ... -->
-  <script src="https://unpkg.com/together-button-web@0.1.6/dist/together-button.min.jss"></script>
+  <script src="https://unpkg.com/together-button-web@0.1.6/dist/together-button.min.js"></script>
 </body>
 ```
  
