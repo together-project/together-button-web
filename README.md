@@ -67,16 +67,16 @@ Para que ele funcione como o esperado instancie o objetivo da Together:
 ```javascript
 new TogetherButton()
 ```
-No botão adicione a classe "together-btn" e em volta do botão adicione uma div com a classe "content-togeher"
+No botão adicione a classe "together-btn" e em volta do botão adicione uma div com a classe "content-together"
 
 Exemplo:
 ```html
-<div class="content-togeher">
+<div class="content-together">
   <button class="together-btn"> Violência contra a mulher </button>
 </div>
 ```
 
-* Para o botão funcionar corretamente envolva ele com a div de classe "content-togeher"
+* Para o botão funcionar corretamente envolva ele com a div de classe "content-together"
 
 * Para o modal ser chamado no botão e preciso ter a classe "together-btn"
 
@@ -120,7 +120,7 @@ Ou utilize CDN
 ```html
   <!-- ... -->
   <script>
-    const togtherButton = new TogetherButton()
+    const togetherButton = new TogetherButton()
   </script>
 </body>
 ```
@@ -132,17 +132,17 @@ Ou utilize CDN
 O botão que vai abrir o modal da Together fica a sua escolha onde e como colocar.
 
 
-No botão adicione a classe "together-btn" e em volta do botão adicione uma div com a classe "content-togeher"
+No botão adicione a classe "together-btn" e em volta do botão adicione uma div com a classe "content-together"
 
 Exemplo:
 
 ```html
-<div class="content-togeher">
+<div class="content-together">
   <button class="together-btn"> Violência contra a mulher </button>
 </div>
 ```
 
-* Para o botão funcionar corretamente envolva ele com a div de classe "content-togeher"
+* Para o botão funcionar corretamente envolva ele com a div de classe "content-together"
 
 * Para o modal ser chamado no botão e preciso ter a classe "together-btn"
 

@@ -5,7 +5,7 @@ export default class TogetherButton {
 
   showModal() {
     if (document.querySelector('.together-content-modal') == null) {
-      document.querySelector('.content-togeher').innerHTML += /*html*/`
+      document.querySelector('.content-together').innerHTML += /*html*/`
       <div class="together-content-modal">
       <!-- Together Styles -->
       <style>
