@@ -17,7 +17,7 @@
 
   
 
-Together é um projeto da comunidade para combate a violência domestica no Brasil.
+Together é um projeto da comunidade para combate a violência doméstica no Brasil.
 
 Para saber mais detalhes sobre o projeto acesse [esse repositório](https://github.com/together-project/together).
 
@@ -27,7 +27,7 @@ Para saber mais detalhes sobre o projeto acesse [esse repositório](https://gith
 
   
 
-Para estar mais perto das mulheres que sofrem violência, criamos essa biblioteca na versão web que permite qualquer site ou sistema adicionar um simples e discreto botão de denuncia.
+Para estar mais perto das mulheres que sofrem violência, criamos essa biblioteca na versão web que permite qualquer site ou sistema adicionar um simples e discreto botão de denúncia.
 
   
 ![Vídeo do modal na versão desktop e versão mobile](https://raw.githubusercontent.com/together-project/together-button-web/master/assets/web-example.gif)
@@ -60,27 +60,27 @@ import TogetherButton from 'together-button-web'
 3 - Adicione o botão de chamada
 
 
-O botão que vai abrir o modal da Together fica a sua escolha onde e como colocar.
+O botão que vai abrir o modal da Together fica à sua escolha onde e como colocar.
 
-Para que ele funcione como o esperado instancie o objetivo da Together:
+Para que ele funcione como o esperado instancie o objeto do botão:
 
 ```javascript
 new TogetherButton()
 ```
-No botão adicione a classe "together-btn" e em volta do botão adicione uma div com a classe "content-togeher"
+No botão adicione a classe "together-btn" e em volta do botão adicione uma div com a classe "content-together"
 
 Exemplo:
 ```html
-<div class="content-togeher">
+<div class="content-together">
   <button class="together-btn"> Violência contra a mulher </button>
 </div>
 ```
 
-* Para o botão funcionar corretamente envolva ele com a div de classe "content-togeher"
+* Para o botão funcionar corretamente envolva ele com a div de classe "content-together"
 
-* Para o modal ser chamado no botão e preciso ter a classe "together-btn"
+* Para o modal ser chamado no botão é preciso ter a classe "together-btn"
 
-* Teste para ver se sua página não possui css conflitantes.
+* Teste para ver se sua página não possui CSS conflitantes.
 
 
 #### Importações clássicas
@@ -120,7 +120,7 @@ Ou utilize CDN
 ```html
   <!-- ... -->
   <script>
-    const togtherButton = new TogetherButton()
+    const togetherButton = new TogetherButton()
   </script>
 </body>
 ```
@@ -129,22 +129,22 @@ Ou utilize CDN
 4 - Adicione o botão de chamada
 
 
-O botão que vai abrir o modal da Together fica a sua escolha onde e como colocar.
+O botão que vai abrir o modal da Together fica à sua escolha onde e como colocar.
 
 
-No botão adicione a classe "together-btn" e em volta do botão adicione uma div com a classe "content-togeher"
+No botão adicione a classe "together-btn" e em volta do botão adicione uma div com a classe "content-together"
 
 Exemplo:
 
 ```html
-<div class="content-togeher">
+<div class="content-together">
   <button class="together-btn"> Violência contra a mulher </button>
 </div>
 ```
 
-* Para o botão funcionar corretamente envolva ele com a div de classe "content-togeher"
+* Para o botão funcionar corretamente envolva ele com a div de classe "content-together"
 
-* Para o modal ser chamado no botão e preciso ter a classe "together-btn"
+* Para o modal ser chamado no botão é preciso ter a classe "together-btn"
 
 * Teste para ver se sua página não possui css conflitantes.
 
@@ -154,7 +154,7 @@ Exemplo:
 
   - Projeto React
   - Projeto Angular
-  - Wordpress
+  - WordPress
   - Site estático
   - Projeto Ruby on Rails 
 

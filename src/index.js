@@ -5,7 +5,7 @@ export default class TogetherButton {
 
   showModal() {
     if (document.querySelector('.together-content-modal') == null) {
-      document.querySelector('.content-togeher').innerHTML += /*html*/`
+      document.querySelector('.content-together').innerHTML += /*html*/`
       <div class="together-content-modal">
       <!-- Together Styles -->
       <style>
@@ -326,7 +326,7 @@ export default class TogetherButton {
           <div class="together-modal-content-home">
   
             <div class="together-container-center together-container-txt">
-              <span>As vezes só precisamos de </br> alguém para conversar
+              <span>Às vezes só precisamos de </br> alguém para conversar
               </span>
             </div>
   
@@ -360,18 +360,18 @@ export default class TogetherButton {
             <div class="together-modal-content-call-help-instructions">
               <div class="together-emergency-item">
                 <span>Atenção!</span></br>
-                <p>Se você estiver em situação de emergencia ligar para <a href="tel:190">190</a></p></br></br>
+                <p>Se você estiver em situação de emergência, ligar para <a href="tel:190">190</a></p></br></br>
               </div>
               <div class="together-emergency-item">
                 <span>Por ligação</span></br>
                 <p>Se estiver em segurança para falar ao telefone, você pode denunciar ou receber orientações pelo
-                  numero
+                  número
                   <a href="tel:180">180</a></p></br></br>
               </div>
               <div class="together-emergency-item">
                 <span>Fale online</span></br>
-                <p>Se você quer conversar online acesse o chat do Ministerio dos Direitos Humanos <a
-                    href="https://mdh-chat.metasix.solutions/livechat?mode=popout" target="_blank"> clicando aqui</a></p></br>
+                <p>Se você quer conversar online acesse o chat do Ministério dos Direitos Humanos <a
+                    href="https://mdh-chat.metasix.solutions/livechat?mode=popout" target="_blank"> clicando aqui</a>.</p></br>
                 <p>É uma forma silenciosa e segura de denunciar.</p></br>
               </div>
             </div>
